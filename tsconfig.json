@@ -25,6 +25,6 @@
   },
   "exclude": [
     "src/app/**/*",
-    "src/main.ts"
+    "src/main.tsx"
   ]
 }
