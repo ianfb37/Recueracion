@@ -1,0 +1,13 @@
+<h1>Guías de la Competición</h1>
+
+<div *ngIf="guias$ | async as guias; else loadingBlock">
+  <ul>
+    <li *ngFor="let guia of guias">
+      {{ guia.name }}
+    </li>
+  </ul>
+</div>
+
+<ng-template #loadingBlock>
+  <p>Cargando guías...</p>
+</ng-template>
